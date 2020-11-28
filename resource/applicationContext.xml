@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.3.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util.xsd">
+       <!-- 构造方法注入 -->
+       <!--<bean id="userModel" class="com.ioc.UserModel">
+              <constructor-arg index="0" value="terry123"/>
+              <constructor-arg index="1" value="Terry"/>
+              <constructor-arg index="2" value="man"/>
+       </bean>
+       <bean id="userService" class="com.ioc.UserService">
+              <constructor-arg ref="userModel"/>
+       </bean> -->
+       <!-- 属性setter注入 -->
+<!--       <bean id="userModel" class="com.ioc.UserModel">-->
+<!--              <property name="id" value="terry123"/>-->
+<!--              <property name="name"><value><![CDATA[eee]]></value></property>-->
+<!--              <property name="sex" value="man"/>-->
+<!--       </bean>-->
+<!--       <bean id="userService" class="com.ioc.UserService">-->
+<!--              <property name="userModel" ref="userModel"/>-->
+<!--       </bean>-->
+       <!-- 属性setter注入简化 -->
+<!--       <bean id="userModel" class="com.ioc.UserModel" p:id="terry123" p:name="Terry" p:sex="man"/>-->
+<!--       <bean id="userService" class="com.ioc.UserService" p:userModel-ref="userModel"/>-->
+       <!-- 构造方法注入简化 -->
+<!--       <bean id="userModel" class="com.ioc.UserModel" c:id="terry123&lt;" c:name="Terry" c:sex="man"/>-->
+<!--       <bean id="userService" class="com.ioc.UserService" c:userModel-ref="userModel"/>-->
+       <!-- 集合属性注入 -->
+<!--       <bean id="iocCollections" class="com.ioc.IocCollections">-->
+<!--              <property name="listColl">-->
+<!--                     <list>-->
+<!--                            <value>中国</value>-->
+<!--                            <value>日本</value>-->
+<!--                            <value>美国</value>-->
+<!--                     </list>-->
+<!--              </property>-->
+<!--              <property name="setColl">-->
+<!--                     <set>-->
+<!--                            <value>苹果</value>-->
+<!--                            <value>香蕉</value>-->
+<!--                            <value>草莓</value>-->
+<!--                     </set>-->
+<!--              </property>-->
+<!--              <property name="arrayColl">-->
+<!--                     <array>-->
+<!--                            <value>电视</value>-->
+<!--                            <value>手机</value>-->
+<!--                            <value>汽车</value>-->
+<!--                     </array>-->
+<!--              </property>-->
+<!--              <property name="mapColl">-->
+<!--                     <map>-->
+<!--                            <entry key="老师" value="学生"/>-->
+<!--                            <entry key="家长" value="孩子"/>-->
+<!--                            <entry key="天空" value="小鸟"/>-->
+<!--                     </map>-->
+<!--              </property>-->
+<!--              <property name="propColl">-->
+<!--                     <props>-->
+<!--                            <prop key="java">spring</prop>-->
+<!--                            <prop key="php">thinkphp</prop>-->
+<!--                            <prop key="python">dingo</prop>-->
+<!--                     </props>-->
+<!--              </property>-->
+<!--       </bean>-->
+       <!-- 表达式注入 -->
+<!--       <bean id="anonymous" class="com.ioc.AnonymousUserModel" p:id="1231" p:name="xiayuj" p:sex="man" p:age="11" p:phone="13138099087"/>-->
+<!--       <bean id="newUserModel" class="com.ioc.newUserModel">-->
+<!--              <property name="id" value="#{T(java.lang.Math).random()}"/>-->
+<!--              <property name="name" value="#{anonymous.name}"/>-->
+<!--              <property name="sex" value="女"/>-->
+<!--              <property name="age" value="#{13+2}"/>-->
+<!--              <property name="phone" value="143434343434343"/>-->
+<!--              <property name="osName" value="#{systemProperties['os.name']}"/>-->
+<!--       </bean>-->
+<!--       <bean id="userDao" class="com.ioc.UserDao">-->
+<!--              <property name="newUserModel" ref="newUserModel"/>-->
+<!--              <property name="man" value="#{(newUserModel.sex eq '男')}"/>-->
+<!--              <property name="ageType" value="#{newUserModel.age > 18 ?'成年人':'未成年人'}"/>-->
+<!--              <property name="phone" value="#{newUserModel.phone matches '^1'}"/>-->
+<!--       </bean>-->
+       <!-- 自动装配 -->
+<!--       <bean id="userModel" class="com.ioc.auto.UserModel">-->
+<!--              <property name="id" value="xiayue123"/>-->
+<!--              <property name="name" value="xiayujie"/>-->
+<!--              <property name="sex" value="man"/>-->
+<!--       </bean>-->
+       <!-- byName -->
+<!--       <bean id="userService" class="com.ioc.auto.UserService" autowire="byName"/>-->
+       <!-- byType -->
+<!--       <bean id="userService" class="com.ioc.auto.UserService" autowire="byType"/>-->
+       <!-- constructor -->
+<!--       <bean id="userService" class="com.ioc.auto.UserService" autowire="constructor"/>-->
+       <!-- 注解扫描bean -->
+<!--       <context:component-scan base-package="com.ioc.annotation"/>-->
+       <!-- target object -->
+       <bean id="userDao" class="com.ioc.aop.UserDaoImpl"/>
+       <bean id="eUserDao" class="com.ioc.aop.EUserDaoImpl"/>
+       <!--  切面 -->
+       <bean id="logAspect" class="com.ioc.aop.LogAspect"/>
+       <bean id="logBeforeAspect" class="com.ioc.aop.LogBeforeAspect"/>
+       <bean id="logAfterAspect" class="com.ioc.aop.LogAfterAspect"/>
+       <bean id="logThrowAspect" class="com.ioc.aop.LogThrowAspect"/>
+       <bean id="userDaoAspect" class="org.springframework.aop.support.DefaultIntroductionAdvisor">
+              <constructor-arg ref="eUserDao"/>
+              <constructor-arg value="com.ioc.aop.EUserDao"/>
+       </bean>
+       <bean id="userDaoProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+              <property name="proxyInterfaces" value="com.ioc.aop.UserDao"/>
+              <property name="target" ref="userDao"/>
+              <!-- 环绕通知 -->
+<!--              <property name="interceptorNames" value="logAspect"/>-->
+              <property name="interceptorNames">
+                     <list>
+                            <value>logAspect</value>
+                            <value>logBeforeAspect</value>
+                            <value>logAfterAspect</value>
+                            <value>logThrowAspect</value>
+                            <value>userDaoAspect</value>
+                     </list>
+              </property>
+              <property name="proxyTargetClass" value="false"/>
+       </bean>
+</beans>
