@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="398cfad6-e207-466c-87d4-6f9bbc72cf09" name="Default Changelist" comment="" />
+    <list default="true" id="398cfad6-e207-466c-87d4-6f9bbc72cf09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ioc/aspectan/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ioc/aspectan/TestUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ioc/aspectan/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ioc/aspectan/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ioc/aspectj/LogAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ioc/aspectj/TestUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ioc/aspectj/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ioc/aspectj/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ioc/log4j/TestUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ioc/log4j/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IocXml.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IocXml.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IocXml/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IocXml/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resource/applicationContext.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +59,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -36,7 +75,6 @@
   <component name="ProjectId" id="1kdvgXg51BdOTH7G3W3muDsNA3b" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -44,36 +82,36 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/ioc/auto" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ioc.aspectan" />
       <recent name="com.ioc.auto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/com/ioc/auto" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestUserDao.testAddUser">
-    <configuration name="TestIocCollections.testShow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IocXml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ioc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ioc" />
-      <option name="MAIN_CLASS_NAME" value="com.ioc.TestIocCollections" />
-      <option name="METHOD_NAME" value="testShow" />
-      <option name="TEST_OBJECT" value="method" />
+  <component name="RunManager" selected="JUnit.TestUserDao.testRun">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,6 +127,38 @@
       <option name="PACKAGE_NAME" value="com.ioc.annotation" />
       <option name="MAIN_CLASS_NAME" value="com.ioc.annotation.TestUserController" />
       <option name="METHOD_NAME" value="testFindUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUserDao.testAddUser (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IocXml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ioc.aspectj.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ioc.aspectj" />
+      <option name="MAIN_CLASS_NAME" value="com.ioc.aspectj.TestUserDao" />
+      <option name="METHOD_NAME" value="testAddUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestUserDao.testAddUser (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IocXml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ioc.aspectan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ioc.aspectan" />
+      <option name="MAIN_CLASS_NAME" value="com.ioc.aspectan.TestUserDao" />
+      <option name="METHOD_NAME" value="testAddUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -110,33 +180,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestUserDao.testShow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestUserDao.testRun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IocXml" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ioc.*" />
+          <option name="PATTERN" value="com.ioc.log4j.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ioc" />
-      <option name="MAIN_CLASS_NAME" value="com.ioc.TestUserDao" />
-      <option name="METHOD_NAME" value="testShow" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestUserService.testFindUser (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IocXml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ioc.auto.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ioc.auto" />
-      <option name="MAIN_CLASS_NAME" value="com.ioc.auto.TestUserService" />
-      <option name="METHOD_NAME" value="testFindUser" />
+      <option name="PACKAGE_NAME" value="com.ioc.log4j" />
+      <option name="MAIN_CLASS_NAME" value="com.ioc.log4j.TestUserDao" />
+      <option name="METHOD_NAME" value="testRun" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,26 +198,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestUserDao.testRun" />
+        <item itemvalue="JUnit.TestUserDao.testAddUser (2)" />
+        <item itemvalue="JUnit.TestUserDao.testAddUser (1)" />
         <item itemvalue="JUnit.TestUserDao.testAddUser" />
         <item itemvalue="JUnit.TestUserController.testFindUser" />
-        <item itemvalue="JUnit.TestUserService.testFindUser (1)" />
-        <item itemvalue="JUnit.TestUserDao.testShow" />
-        <item itemvalue="JUnit.TestIocCollections.testShow" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -175,17 +218,33 @@
       <option name="presentableId" value="Default" />
       <updated>1606043394471</updated>
       <workItem from="1606043399615" duration="16173000" />
+      <workItem from="1606615403242" duration="316000" />
+      <workItem from="1606638819032" duration="7868000" />
+      <workItem from="1606659406370" duration="2268000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="240" y="65" key="#Project_Structure" timestamp="1606056528378">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="304" y="0" key="#Project_Structure" timestamp="1606641925303">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="240" y="65" key="#Project_Structure/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1606056528378" />
+    <state x="304" y="0" key="#Project_Structure/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1606641925303" />
     <state x="263" y="94" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1606051495738">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -195,26 +254,34 @@
     </state>
     <state x="453" y="91" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1606142454160" />
     <state x="453" y="91" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800/1280.23.1920.1057@0.0.1280.800" timestamp="1606136338343" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1606286236481">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="500" y="217" key="FileChooserDialogImpl" timestamp="1606641916596">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="500" y="217" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1606641916596" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1606661694584">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1606286236481" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800/1280.23.1920.1057@0.0.1280.800" timestamp="1606143138198" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1606286236479">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1606661694584" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1606661694584">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1606286236479" />
     <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800/1280.23.1920.1057@0.0.1280.800" timestamp="1606143138194" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1606286236478">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1606661694584" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1606661694583">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1606286236478" />
     <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800/1280.23.1920.1057@0.0.1280.800" timestamp="1606143138193" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1606286236480">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1606661694583" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1606661694584">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1606286236480" />
     <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800/1280.23.1920.1057@0.0.1280.800" timestamp="1606143138197" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1606661694584" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1606052526172">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -231,13 +298,18 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1606052526170" />
-    <state x="128" y="0" key="SettingsEditor" timestamp="1606056514346">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="154" y="0" key="SettingsEditor" timestamp="1606641883749">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="128" y="0" key="SettingsEditor/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1606056514346" />
+    <state x="154" y="0" key="SettingsEditor/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1606641883749" />
     <state x="344" y="301" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1606051558206">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="344" y="301" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1606051558206" />
+    <state x="178" y="5" key="new project wizard" timestamp="1606640796693">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="5" key="new project wizard/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1606640796693" />
   </component>
 </project>

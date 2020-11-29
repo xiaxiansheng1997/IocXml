@@ -104,32 +104,58 @@
 <!--       <bean id="userService" class="com.ioc.auto.UserService" autowire="constructor"/>-->
        <!-- 注解扫描bean -->
 <!--       <context:component-scan base-package="com.ioc.annotation"/>-->
-       <!-- target object -->
-       <bean id="userDao" class="com.ioc.aop.UserDaoImpl"/>
-       <bean id="eUserDao" class="com.ioc.aop.EUserDaoImpl"/>
+       <!-- target object spring aspect-->
+<!--       <bean id="userDao" class="com.ioc.aop.UserDaoImpl"/>-->
+<!--       <bean id="eUserDao" class="com.ioc.aop.EUserDaoImpl"/>-->
        <!--  切面 -->
-       <bean id="logAspect" class="com.ioc.aop.LogAspect"/>
-       <bean id="logBeforeAspect" class="com.ioc.aop.LogBeforeAspect"/>
-       <bean id="logAfterAspect" class="com.ioc.aop.LogAfterAspect"/>
-       <bean id="logThrowAspect" class="com.ioc.aop.LogThrowAspect"/>
-       <bean id="userDaoAspect" class="org.springframework.aop.support.DefaultIntroductionAdvisor">
-              <constructor-arg ref="eUserDao"/>
-              <constructor-arg value="com.ioc.aop.EUserDao"/>
-       </bean>
-       <bean id="userDaoProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
-              <property name="proxyInterfaces" value="com.ioc.aop.UserDao"/>
-              <property name="target" ref="userDao"/>
-              <!-- 环绕通知 -->
-<!--              <property name="interceptorNames" value="logAspect"/>-->
-              <property name="interceptorNames">
-                     <list>
-                            <value>logAspect</value>
-                            <value>logBeforeAspect</value>
-                            <value>logAfterAspect</value>
-                            <value>logThrowAspect</value>
-                            <value>userDaoAspect</value>
-                     </list>
-              </property>
-              <property name="proxyTargetClass" value="false"/>
-       </bean>
+<!--       <bean id="logAspect" class="com.ioc.aop.LogAspect"/>-->
+<!--       <bean id="logBeforeAspect" class="com.ioc.aop.LogBeforeAspect"/>-->
+<!--       <bean id="logAfterAspect" class="com.ioc.aop.LogAfterAspect"/>-->
+<!--       <bean id="logThrowAspect" class="com.ioc.aop.LogThrowAspect"/>-->
+<!--       <bean id="userDaoAspect" class="org.springframework.aop.support.DefaultIntroductionAdvisor">-->
+<!--              <constructor-arg ref="eUserDao"/>-->
+<!--              <constructor-arg value="com.ioc.aop.EUserDao"/>-->
+<!--       </bean>-->
+<!--       <bean id="userDaoProxy" class="org.springframework.aop.framework.ProxyFactoryBean">-->
+<!--              <property name="proxyInterfaces" value="com.ioc.aop.UserDao"/>-->
+<!--              <property name="target" ref="userDao"/>-->
+<!--              &lt;!&ndash; 环绕通知 &ndash;&gt;-->
+<!--&lt;!&ndash;              <property name="interceptorNames" value="logAspect"/>&ndash;&gt;-->
+<!--              <property name="interceptorNames">-->
+<!--                     <list>-->
+<!--                            <value>logAspect</value>-->
+<!--                            <value>logBeforeAspect</value>-->
+<!--                            <value>logAfterAspect</value>-->
+<!--                            <value>logThrowAspect</value>-->
+<!--                            <value>userDaoAspect</value>-->
+<!--                     </list>-->
+<!--              </property>-->
+<!--              <property name="proxyTargetClass" value="false"/>-->
+<!--       </bean>-->
+       <!-- 目标对象 aspect xml-->
+<!--       <bean id="userDao" class="com.ioc.aspectj.UserDaoImpl"/>-->
+<!--       &lt;!&ndash; 切面&ndash;&gt;-->
+<!--       <bean id="logAspect" class="com.ioc.aspectj.LogAspect"/>-->
+
+<!--       <aop:config>-->
+<!--              <aop:aspect ref="logAspect">-->
+<!--                     &lt;!&ndash; 配置切入点&ndash;&gt;-->
+<!--                     <aop:pointcut id="myPointCut" expression="execution(* com.ioc.aspectj.UserDao.addUser(..))"/>-->
+<!--                     &lt;!&ndash; 前置通知&ndash;&gt;-->
+<!--                     <aop:before method="myBefore" pointcut-ref="myPointCut"/>-->
+<!--                     &lt;!&ndash; 环绕通知&ndash;&gt;-->
+<!--                     <aop:around method="myAround" pointcut-ref="myPointCut"/>-->
+<!--                     &lt;!&ndash; 后置通知&ndash;&gt;-->
+<!--                     <aop:after-returning method="myAfterReturning" pointcut-ref="myPointCut"/>-->
+<!--                     &lt;!&ndash; 最终通知&ndash;&gt;-->
+<!--                     <aop:after method="myAfter" pointcut-ref="myPointCut"/>-->
+<!--                     &lt;!&ndash; 异常通知&ndash;&gt;-->
+<!--                     <aop:after-throwing method="myAfterThrowing" pointcut-ref="myPointCut" throwing="e"/>-->
+<!--              </aop:aspect>-->
+<!--       </aop:config>-->
+       <!-- aspect annotation-->
+<!--       <context:component-scan base-package="com.ioc.aspectan"/>-->
+<!--       &lt;!&ndash; 开启切面的自动代理&ndash;&gt;-->
+<!--       <aop:aspectj-autoproxy/>-->
+       <bean id="userDao" class="com.ioc.log4j.UserDao"/>
 </beans>
